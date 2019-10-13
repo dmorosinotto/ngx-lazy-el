@@ -47,6 +47,7 @@ export class LazyLoadDirective implements OnInit, OnDestroy {
       } else {
         nodeTags = [template.rootNodes[0].tagName.toLowerCase()];
       }
+	console.info("MAYBE FREE", template);
     }
 
     if (!nodeTags) {
